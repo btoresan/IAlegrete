@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 ```python
 b_initial = 0.0  
 w_initial = 0.0
-alpha = 0.001  # Learning rate
+alpha = 0.001 
 iterations = 1000
 ```
 
