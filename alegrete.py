@@ -177,6 +177,6 @@ def load_data(file_path):
     data = np.genfromtxt(file_path, delimiter=',', skip_header=1)
     return data
 
-bs, ws = fit(load_data('alegrete.csv'), 0, 0, 0.01, 1000)
+#bs, ws = fit(load_data('alegrete.csv'), 0, 0, 0.01, 1000)
 
-animate_training(load_data('alegrete.csv'), bs, ws)
+#animate_training(load_data('alegrete.csv'), bs, ws)
