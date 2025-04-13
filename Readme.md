@@ -30,36 +30,44 @@ num_iterations = 20
 ### Análise dos datasets
 
 #### MNIST
-- Classes:
+- Classes: 10
 - Amostras:
+- - Treino: 60.000
+- - Teste: 10.000
 - Tamanho das imagens
-- - Altura:
-- - Largura:
-- - Canais de cor:
+- - Altura: 28 pixels
+- - Largura: 28 pixels
+- - Canais de cor: 1 (escala de cinza)
 
 #### Fashion MNIST
-- Classes:
+- Classes: 10
 - Amostras:
+- - Treino: 60.000
+- - Teste: 10.000
 - Tamanho das imagens
-- - Altura:
-- - Largura:
-- - Canais de cor:
+- - Altura: 28 pixels
+- - Largura: 28 pixels
+- - Canais de cor: 1 (escala de cinza)
 
 #### CIFAR-10
-- Classes:
+- Classes: 10
 - Amostras:
+- - Treino: 50.000
+- - Teste: 10.000
 - Tamanho das imagens
-- - Altura:
-- - Largura:
-- - Canais de cor:
+- - Altura: 32 pixels
+- - Largura: 32 pixels
+- - Canais de cor: 3 (RGB)
 
 #### CIFAR-100
-- Classes:
+- Classes: 100
 - Amostras:
+- - Treino: 50.000
+- - Teste: 10.000
 - Tamanho das imagens
-- - Altura:
-- - Largura:
-- - Canais de cor:
+- - Altura: 32 pixels
+- - Largura: 32 pixels
+- - Canais de cor: 3 (RGB)
 
 ### Extras
 
