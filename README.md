@@ -14,12 +14,3 @@ w_initial = 0.0
 alpha = 0.001 
 iterations = 1000
 ```
-
-## Extras
-Incluimos duas funcoes adicionais em alegrete .py para a visualizacao do treinamento'
-```python
- #Plota a reta e os pontos de dados
-plot_regression(data, b, w, title="Linear Regression Fit")
-#Plota os dados e anima a mudanca da reta ao longo do treinamento
-animate_training(load_data('alegrete.csv'), bs, ws) 
-```
