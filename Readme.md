@@ -1,5 +1,5 @@
 # Trabalho 1 - Aprendizado Supervisionado
-Inteligencia Artifical (2025/1) - Turma B
+Inteligencia Artificial (2025/1) - Turma B
 
 ### Integrantes
 - Bernardo Toresan - 00579107
@@ -20,7 +20,7 @@ num_iterations = 20
 10.48
 
 ### Conclusões
-O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de forma razoável por uma regressão linear. Para isso, não é neccesário que os valores dos parâmetros iniciais `b` e `w` sejam cuidadosamente escolhidos, desde que `alpha` e `num_interations` sejam adequados e suficientes para encontrar um bom ajuste.
+O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de forma razoável por uma regressão linear. Para isso, não é necessário que os valores dos parâmetros iniciais `b` e `w` sejam cuidadosamente escolhidos, desde que `alpha` e `num_interations` sejam adequados e suficientes para encontrar um bom ajuste.
 
 ## Exercício 2 - Tensorflow/Keras
 
@@ -71,7 +71,7 @@ O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de form
 #### MNIST
 É o dataset mais simples, possuindo imagens 28x28 monocromáticas de apenas 10 classes. Os dígitos indo-arábicos que definem as classes naturalmente possuem diferenças notáveis, apesar das variações presentes na escrita, o que facilita a identificação.
 
-Obtivemos uma acurácia de 97,43%. Como é um dataset simples, com apenas uma camada de convolução e uma camada de Max Pooling o modelo já consegue identificar as caracteristicas principais de cada classe. Após o Flatten é utilizado uma camada densa com 56 neurônios, junto com uma camada menor de 28 neurônios, antes da camada final. A camada densa adicional com 28 neurônios foi adicionada para garantir uma acurácia proxima a 100%.
+Obtivemos uma acurácia de 97,43%. Como é um dataset simples, com apenas uma camada de convolução e uma camada de Max Pooling o modelo já consegue identificar as características principais de cada classe. Após o Flatten é utilizado uma camada densa com 56 neurônios, junto com uma camada menor de 28 neurônios, antes da camada final. A camada densa adicional com 28 neurônios foi adicionada para garantir uma acurácia próxima a 100%.
 
 #### Fashion MNIST
 É um dataset mais difícil que o MNIST, mas ainda simples. Com a mesma estrutura das imagens (28x28 monocromáticas) e número de classes (10), o Fashion MNIST apresenta um desafio maior que o MNIST devido à temática "fashion", em que a diferença entre classes não é tão clara como no MNIST.
@@ -86,7 +86,7 @@ Obtivemos uma acurácia de 74,73%. Iniciamos com duas camadas de convolução in
 #### CIFAR-100
 É o dataset mais difícil dentre os avaliados. Com a mesma estrutura das imagens do CIFAR-10 (32x32 tricromáticas), o CIFAR-100 se destaca por suas 100 classes, que podem ser agrupadas em 20 superclasses. Esse grande número de classes dificulta muito sua classificação.
 
-Obtivemos uma acurácia de 53,76%. Começamos com três camadas de convolução intercaladas com camadas Max Pooling. Adicionamos mais uma camada de convolução antes de cada Max Pooling, o que foi possível com o uso de padding na convolução e trouxe bons incrementos na acurácia da rede. Tembém conseguimos grande melhora utilizando as técnicas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting. Outra ideia que testamos foi adicionar mais camadas MLP no final da rede, mas o desempenho teve leve piora.
+Obtivemos uma acurácia de 53,76%. Começamos com três camadas de convolução intercaladas com camadas Max Pooling. Adicionamos mais uma camada de convolução antes de cada Max Pooling, o que foi possível com o uso de padding na convolução e trouxe bons incrementos na acurácia da rede. Também conseguimos grande melhora utilizando as técnicas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting. Outra ideia que testamos foi adicionar mais camadas MLP no final da rede, mas o desempenho teve leve piora.
 
 ### Extras
 
