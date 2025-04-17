@@ -19,11 +19,8 @@ num_iterations = 20
 ### Erro quadrático médio obtido
 10.48
 
-### Extras
-
-
 ### Conclusões
-
+O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de forma razoável por uma regressão linear. Para isso, não é neccesário que os valores dos parâmetros iniciais `b` e `w` sejam cuidadosamente escolhidos, desde que `alpha` e `num_interations` sejam adequados e suficientes para encontrar um bom ajuste.
 
 ## Exercício 2 - Tensorflow/Keras
 
