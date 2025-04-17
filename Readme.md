@@ -81,12 +81,12 @@ Obtivemos uma acurácia de 89,34%. Por causa dessa diferença pouco clara entre 
 #### CIFAR-10
 É um dataset mais complexo que o MNIST e Fashion MNIST por alguns motivos. As imagens possuem 3 canais de cor e são um pouco maiores, em 32x32. Além disso, as classes possuem desafios conhecidos até para humanos, como a diferenciação de cachorros e gatos.
 
-Obtivemos uma acurácia de 74,73%. Iniciamos com duas camadas de convolução intercaladas com camadas Max Pooling. Incorporamos mais uma camada de convolução e Max Pooling e tivemos resultados positivos, também realizando o padding na convolução para evitar a redução demasiada dos dados. Além disso, houve melhora na acurácia utilizando as técnincas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting.
+Obtivemos uma acurácia de 74,73%. Iniciamos com duas camadas de convolução intercaladas com camadas Max Pooling. Incorporamos mais uma camada de convolução e Max Pooling e tivemos resultados positivos, também realizando o padding na convolução para evitar a redução demasiada dos dados. Além disso, houve melhora na acurácia utilizando as técnicas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting.
 
 #### CIFAR-100
 É o dataset mais difícil dentre os avaliados. Com a mesma estrutura das imagens do CIFAR-10 (32x32 tricromáticas), o CIFAR-100 se destaca por suas 100 classes, que podem ser agrupadas em 20 superclasses. Esse grande número de classes dificulta muito sua classificação.
 
-Obtivemos uma acurácia de 53,76%. Começamos com três camadas de convolução intercaladas com camadas Max Pooling. Adicionamos mais uma camada de convolução antes de cada Max Pooling, o que foi possível com o uso de padding na convolução e trouxe bons incrementos na acurácia da rede. Tembém conseguimos grande melhora utilizando as técnincas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting. Outra ideia que testamos foi adicionar mais camadas MLP no final da rede, mas o desempenho teve leve piora.
+Obtivemos uma acurácia de 53,76%. Começamos com três camadas de convolução intercaladas com camadas Max Pooling. Adicionamos mais uma camada de convolução antes de cada Max Pooling, o que foi possível com o uso de padding na convolução e trouxe bons incrementos na acurácia da rede. Tembém conseguimos grande melhora utilizando as técnicas de normalização e dropout. A normalização foi ligeiramente mais efetiva antes da ativação e o dropout serviu para evitar overfitting. Outra ideia que testamos foi adicionar mais camadas MLP no final da rede, mas o desempenho teve leve piora.
 
 ### Extras
 
