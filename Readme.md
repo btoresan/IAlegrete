@@ -71,12 +71,12 @@ O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de form
 #### MNIST
 É o dataset mais simples, possuindo imagens 28x28 monocromáticas de apenas 10 classes. Os dígitos indo-arábicos que definem as classes naturalmente possuem diferenças notáveis, apesar das variações presentes na escrita, o que facilita a identificação.
 
-Obtivemos uma acurácia de 97,43%.
+Obtivemos uma acurácia de 97,43%. Como é um dataset simples, com apenas uma camada de convolução e uma camada de Max Pooling o modelo já consegue identificar as caracteristicas principais de cada classe. Após o Flatten é utilizado uma camada densa com 56 neurônios, junto com uma camada menor de 28 neurônios, para a decisão final, antes da camada final. A camada densa adicional com 28 neurônios foi adicionada para garantir uma acurácia proxima a 100%.
 
 #### Fashion MNIST
 É um dataset mais difícil que o MNIST, mas ainda simples. Com a mesma estrutura das imagens (28x28 monocromáticas) e número de classes (10), o Fashion MNIST apresenta um desafio maior que o MNIST devido à temática "fashion", em que a diferença entre classes não é tão clara como no MNIST.
 
-Obtivemos uma acurácia de 89,34%.
+Obtivemos uma acurácia de 89,34%. Por causa dessa diferença pouco clara entre as classes, foi usado duas camadas de convolução intercaladas com camadas Max Pooling, sendo a primeira com menos filtros que a segunda, já que a progressão do tamanho das camadas nos mostrou ganhos em acurácia. Após o flatten é utilizado uma única camada com 512 neurônios antes da camada final, pois ao testarmos uma camada maior, ao invés de múltiplas camadas menores, obtivemos melhores resultados.
 
 #### CIFAR-10
 É um dataset mais complexo que o MNIST e Fashion MNIST por alguns motivos. As imagens possuem 3 canais de cor e são um pouco maiores, em 32x32. Além disso, as classes possuem desafios conhecidos até para humanos, como a diferenciação de cachorros e gatos.
