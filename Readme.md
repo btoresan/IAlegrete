@@ -71,7 +71,7 @@ O conjunto de dados fictício fornecido (alegrete.csv) pode ser modelado de form
 #### MNIST
 É o dataset mais simples, possuindo imagens 28x28 monocromáticas de apenas 10 classes. Os dígitos indo-arábicos que definem as classes naturalmente possuem diferenças notáveis, apesar das variações presentes na escrita, o que facilita a identificação.
 
-Obtivemos uma acurácia de 97,43%. Como é um dataset simples, com apenas uma camada de convolução e uma camada de Max Pooling o modelo já consegue identificar as caracteristicas principais de cada classe. Após o Flatten é utilizado uma camada densa com 56 neurônios, junto com uma camada menor de 28 neurônios, para a decisão final, antes da camada final. A camada densa adicional com 28 neurônios foi adicionada para garantir uma acurácia proxima a 100%.
+Obtivemos uma acurácia de 97,43%. Como é um dataset simples, com apenas uma camada de convolução e uma camada de Max Pooling o modelo já consegue identificar as caracteristicas principais de cada classe. Após o Flatten é utilizado uma camada densa com 56 neurônios, junto com uma camada menor de 28 neurônios, antes da camada final. A camada densa adicional com 28 neurônios foi adicionada para garantir uma acurácia proxima a 100%.
 
 #### Fashion MNIST
 É um dataset mais difícil que o MNIST, mas ainda simples. Com a mesma estrutura das imagens (28x28 monocromáticas) e número de classes (10), o Fashion MNIST apresenta um desafio maior que o MNIST devido à temática "fashion", em que a diferença entre classes não é tão clara como no MNIST.
