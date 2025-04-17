@@ -1,5 +1,5 @@
 # Trabalho 1 - Aprendizado Supervisionado
-Inteligencia Artificial (2025/1) - Turma B
+Inteligência Artificial (2025/1) - Turma B
 
 ### Integrantes
 - Bernardo Toresan - 00579107
